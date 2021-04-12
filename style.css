@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Assistant, 'Courier New', Courier, monospace;
+}
+.container{
+    border: 1px solid #becabe;
+    margin: auto;
+    margin-top: 4rem;
+    width: 40%;
+    height: 500px;
+    background-color: #f4f4f4;
+    
+}
+
+.heading {
+    width: 100%;
+    font-size: 12px;
+    background-color: #f3ebeb;
+    padding: 1rem;
+    
+}
+
+.heading h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 92%;
+    margin: auto;
+    margin: 1rem 0 1rem 0;
+}
+input, .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(196, 187, 187);
+}
+
+.btn {
+    width: 92%;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(196, 187, 187);
+    align-self: center;
+    margin-top: 1.5rem;
+    background-color: #0b0c0a;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #2b2929;
+}
+
+.countdown {
+    display: none;
+    border: 1px solid #becabe;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 4rem;
+    width: 50%;
+    height: 250px;
+    padding-bottom: 2rem;
+    background-color: #f4f4f4;
+}
+
+.colon {
+    font-size: 2rem;
+    color: #051b9b;
+}
+
+.countdown .btn {
+    width: 60%;
+}
+
+.days, 
+.months, 
+.hours, 
+.minutes, 
+.seconds {
+    font-size: 2rem;
+    padding: 1rem;
+    border: 1px solid #d6dbd6;
+    color: #051b9b;
+    box-shadow: 0px 0px 2px 3px #f7eaea;
+}
+
+.days::after {
+    font-size: 12px;
+    color: black;
+    content: "days";
+}
+.months::after {
+    font-size: 12px;
+    color: black;
+    content: "months";
+}
+.hours::after {
+    font-size: 12px;
+    color: black;
+    content: "hours";
+}
+.minutes::after {
+    font-size: 12px;
+    color: black;
+    content: "minutes";
+}
+.seconds::after {
+    font-size: 12px;
+    color: black;
+    content: "seconds";
+}
+
+@media screen and (min-width: 317px) and (max-width: 359px){
+    .container {
+        width: 90%;
+        height: 530px;
+        margin-top: 2rem;
+    }
+    .btn{
+        margin-top: 1rem;
+    }
+    .countdown {
+        height: 550px;
+        margin-top: 1rem;
+        width: 90%;
+    }
+    
+    .timer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .timer span {
+       margin: auto;
+       width: 80%;
+       align-items: center;
+    }
+    .colon {
+        color: #f4f4f4;   
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 440px){
+    .container {
+        width: 90%;
+        height: 550px;
+        margin-top: 2rem;
+    }
+    .countdown {
+        height: 600px;
+        margin-top: 1rem;
+    }
+    
+    .timer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .timer span {
+       margin: auto;
+       width: 80%;
+       align-items: center;
+    }
+    .colon {
+        color: #f4f4f4;   
+    }
+}
+@media screen and (min-width: 360px ) and (max-width: 768px){
+    .container {
+        width: 90%;
+        height: 600px;
+        margin-top: 2rem;
+    }
+    .days, 
+    .months, 
+    .hours, 
+    .minutes, 
+    .seconds {
+    font-size: 2rem;
+    padding: 0.4rem;
+    border: 1px solid #d6dbd6;
+    color: #051b9b;
+    box-shadow: 0px 0px 2px 3px #f7eaea;
+}
+    input, .form-control {
+        width: 100%;
+        padding: 0.8rem;
+        outline: none;
+        font-size: 1rem;
+        border: 1px solid #c4bbbb;
+    }
+    .countdown {
+        width: 90%;
+    }
+    .btn {
+        padding: 0.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 315px){
+  
+    .container {
+        width: 90%;
+        height: 600px;
+        margin-top: 2rem;
+    }
+  
+    input, .form-control {
+        width: 100%;
+        padding: 1rem;
+        outline: none;
+        border: 1px solid #c4bbbb;
+    }
+    .btn {
+        padding: 1rem;
+        margin-top: 1rem;
+    }  
+    .countdown {
+        height: 600px;
+        margin-top: 1rem;
+        width: 90%;
+    }
+    
+    .timer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .timer span {
+       margin: auto;
+       width: 80%;
+       align-items: center;
+    }
+    .colon {
+        color: #f4f4f4;   
+    } 
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .container {
+        height: 550px;
+        width: 90%;
+    }   
+    .countdown {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1027px) and (max-width: 1185px){
+    .container{
+        height: 550px;  
+    }
+}
